@@ -1,0 +1,61 @@
+
+:host([show]) aside{
+  left: 0;
+}
+
+:host([show]) #backdrop{
+  opacity: 1;
+  pointer-events: all;
+}
+
+aside{
+  position:fixed;
+  left: -100%;
+  display: block;
+  min-width: 30rem;
+  max-width: 80%;
+  height: 100vh;
+  background-color:var(--color-grey-1,#ccc);
+  transition: left 0.5s;
+  z-index:9;
+}
+
+header{
+  display:flex;
+  justify-content:space-between;
+  align-items: center;
+  padding: 1em;
+  color: var(--color-primary-contrast,#fff);
+  background-color:var(--color-primary,#000);
+}
+
+header button{
+  padding: 0.5rem 2rem;
+  font-weight:500;
+  font-size: 2rem;
+  color: var(--color-primary-contrast,#fff);
+  background-color:var(--color-primary,#000);
+  border: none;
+}
+
+main{
+  display: block;
+  padding:0.5rem 0rem;
+}
+
+::slotted(*){
+  display: block;
+  padding: 0.5rem 1rem;
+}
+
+#backdrop{
+  position:fixed;
+  left:0;top:0;
+  right:0;bottom:0;
+  background-color:rgb(0,0,0,0.50);
+  opacity:0;
+  transition: opacity 0.5s;
+  /*ignore mouse click*/
+  pointer-events: none;
+  z-index:7;
+}
