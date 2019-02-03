@@ -5,24 +5,13 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0">
   <title>Stencil Component Starter</title>
-  <script src="/build/mycomponent.js"></script>
-  <style>
-    html,
-    body {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    * {
-      box-sizing: inherit;
-    }
-  </style>
+  <script src="/build/dv4all-base.js"></script>
+  <link rel="stylesheet" type="text/css" href="/build/index.css" />
 </head>
 
 <body>
   <!-- SIDE-DRAWER web component
-  <side-drawer title="Changed title">
+  <side-drawer data-title="Changed title">
     <secton slot="tab1-content">
       This is body 1 of drawer
     </secton>
@@ -32,11 +21,8 @@
   </side-drawer>
 -->
   <div>
-    This is my info
-    <dm-tooltip msg="Hey! What's up?" />
+    <dv4-loader data-type="ball-triangle"/>
   </div>
-
-  <script src="index.js"></script>
 
 </body>
 

@@ -18,7 +18,10 @@
   },
   "dependencies": {},
   "devDependencies": {
-    "@stencil/core": "~0.16.2"
+    "@stencil/core": "~0.16.2",
+    "eslint-plugin-prettier": "^3.0.1",
+    "prettier": "^1.16.4",
+    "tslint-config-prettier": "^1.17.0"
   },
   "license": "MIT"
 }

@@ -12,96 +12,126 @@ import '@stencil/core';
 
 export namespace Components {
 
-  interface MyComponent {
-    /**
-    * The first name
-    */
-    'first': string;
-    /**
-    * The last name
-    */
-    'last': string;
-    /**
-    * The middle name
-    */
-    'middle': string;
+  interface Dv4BallTriangle {}
+  interface Dv4BallTriangleAttributes extends StencilHTMLAttributes {}
+
+  interface Dv4Loader {
+    'dataType': string;
   }
-  interface MyComponentAttributes extends StencilHTMLAttributes {
-    /**
-    * The first name
-    */
-    'first'?: string;
-    /**
-    * The last name
-    */
-    'last'?: string;
-    /**
-    * The middle name
-    */
-    'middle'?: string;
+  interface Dv4LoaderAttributes extends StencilHTMLAttributes {
+    'dataType'?: string;
   }
 
-  interface SideDrawer {
+  interface Dv4Packman {}
+  interface Dv4PackmanAttributes extends StencilHTMLAttributes {}
+
+  interface Dv4Roller {}
+  interface Dv4RollerAttributes extends StencilHTMLAttributes {}
+
+  interface Dv4SquareSpin {}
+  interface Dv4SquareSpinAttributes extends StencilHTMLAttributes {}
+
+  interface Dv4SideDrawer {
     'close': () => void;
+    'dataShow': boolean;
+    'dataTitle': string;
     'open': () => void;
-    'show': boolean;
-    'title': string;
   }
-  interface SideDrawerAttributes extends StencilHTMLAttributes {
-    'show'?: boolean;
-    'title'?: string;
+  interface Dv4SideDrawerAttributes extends StencilHTMLAttributes {
+    'dataShow'?: boolean;
+    'dataTitle'?: string;
   }
 
-  interface DmTooltip {
+  interface Dv4Tooltip {
     'msg': string;
   }
-  interface DmTooltipAttributes extends StencilHTMLAttributes {
+  interface Dv4TooltipAttributes extends StencilHTMLAttributes {
     'msg'?: string;
   }
 }
 
 declare global {
   interface StencilElementInterfaces {
-    'MyComponent': Components.MyComponent;
-    'SideDrawer': Components.SideDrawer;
-    'DmTooltip': Components.DmTooltip;
+    'Dv4BallTriangle': Components.Dv4BallTriangle;
+    'Dv4Loader': Components.Dv4Loader;
+    'Dv4Packman': Components.Dv4Packman;
+    'Dv4Roller': Components.Dv4Roller;
+    'Dv4SquareSpin': Components.Dv4SquareSpin;
+    'Dv4SideDrawer': Components.Dv4SideDrawer;
+    'Dv4Tooltip': Components.Dv4Tooltip;
   }
 
   interface StencilIntrinsicElements {
-    'my-component': Components.MyComponentAttributes;
-    'side-drawer': Components.SideDrawerAttributes;
-    'dm-tooltip': Components.DmTooltipAttributes;
+    'dv4-ball-triangle': Components.Dv4BallTriangleAttributes;
+    'dv4-loader': Components.Dv4LoaderAttributes;
+    'dv4-packman': Components.Dv4PackmanAttributes;
+    'dv4-roller': Components.Dv4RollerAttributes;
+    'dv4-square-spin': Components.Dv4SquareSpinAttributes;
+    'dv4-side-drawer': Components.Dv4SideDrawerAttributes;
+    'dv4-tooltip': Components.Dv4TooltipAttributes;
   }
 
 
-  interface HTMLMyComponentElement extends Components.MyComponent, HTMLStencilElement {}
-  var HTMLMyComponentElement: {
-    prototype: HTMLMyComponentElement;
-    new (): HTMLMyComponentElement;
+  interface HTMLDv4BallTriangleElement extends Components.Dv4BallTriangle, HTMLStencilElement {}
+  var HTMLDv4BallTriangleElement: {
+    prototype: HTMLDv4BallTriangleElement;
+    new (): HTMLDv4BallTriangleElement;
   };
 
-  interface HTMLSideDrawerElement extends Components.SideDrawer, HTMLStencilElement {}
-  var HTMLSideDrawerElement: {
-    prototype: HTMLSideDrawerElement;
-    new (): HTMLSideDrawerElement;
+  interface HTMLDv4LoaderElement extends Components.Dv4Loader, HTMLStencilElement {}
+  var HTMLDv4LoaderElement: {
+    prototype: HTMLDv4LoaderElement;
+    new (): HTMLDv4LoaderElement;
   };
 
-  interface HTMLDmTooltipElement extends Components.DmTooltip, HTMLStencilElement {}
-  var HTMLDmTooltipElement: {
-    prototype: HTMLDmTooltipElement;
-    new (): HTMLDmTooltipElement;
+  interface HTMLDv4PackmanElement extends Components.Dv4Packman, HTMLStencilElement {}
+  var HTMLDv4PackmanElement: {
+    prototype: HTMLDv4PackmanElement;
+    new (): HTMLDv4PackmanElement;
+  };
+
+  interface HTMLDv4RollerElement extends Components.Dv4Roller, HTMLStencilElement {}
+  var HTMLDv4RollerElement: {
+    prototype: HTMLDv4RollerElement;
+    new (): HTMLDv4RollerElement;
+  };
+
+  interface HTMLDv4SquareSpinElement extends Components.Dv4SquareSpin, HTMLStencilElement {}
+  var HTMLDv4SquareSpinElement: {
+    prototype: HTMLDv4SquareSpinElement;
+    new (): HTMLDv4SquareSpinElement;
+  };
+
+  interface HTMLDv4SideDrawerElement extends Components.Dv4SideDrawer, HTMLStencilElement {}
+  var HTMLDv4SideDrawerElement: {
+    prototype: HTMLDv4SideDrawerElement;
+    new (): HTMLDv4SideDrawerElement;
+  };
+
+  interface HTMLDv4TooltipElement extends Components.Dv4Tooltip, HTMLStencilElement {}
+  var HTMLDv4TooltipElement: {
+    prototype: HTMLDv4TooltipElement;
+    new (): HTMLDv4TooltipElement;
   };
 
   interface HTMLElementTagNameMap {
-    'my-component': HTMLMyComponentElement
-    'side-drawer': HTMLSideDrawerElement
-    'dm-tooltip': HTMLDmTooltipElement
+    'dv4-ball-triangle': HTMLDv4BallTriangleElement
+    'dv4-loader': HTMLDv4LoaderElement
+    'dv4-packman': HTMLDv4PackmanElement
+    'dv4-roller': HTMLDv4RollerElement
+    'dv4-square-spin': HTMLDv4SquareSpinElement
+    'dv4-side-drawer': HTMLDv4SideDrawerElement
+    'dv4-tooltip': HTMLDv4TooltipElement
   }
 
   interface ElementTagNameMap {
-    'my-component': HTMLMyComponentElement;
-    'side-drawer': HTMLSideDrawerElement;
-    'dm-tooltip': HTMLDmTooltipElement;
+    'dv4-ball-triangle': HTMLDv4BallTriangleElement;
+    'dv4-loader': HTMLDv4LoaderElement;
+    'dv4-packman': HTMLDv4PackmanElement;
+    'dv4-roller': HTMLDv4RollerElement;
+    'dv4-square-spin': HTMLDv4SquareSpinElement;
+    'dv4-side-drawer': HTMLDv4SideDrawerElement;
+    'dv4-tooltip': HTMLDv4TooltipElement;
   }
 
 

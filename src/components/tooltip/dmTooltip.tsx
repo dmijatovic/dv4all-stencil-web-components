@@ -1,18 +1,15 @@
 import { Component, Prop } from "@stencil/core";
 
 @Component({
-  tag: 'dm-tooltip',
-  styleUrl: './dmTooltip.css',
+  tag: "dv4-tooltip",
+  styleUrl: "./dmTooltip.css",
   shadow: true
 })
 export class DmTooltip {
-
-  @Prop() msg: string = "Tooltip message"
+  @Prop() msg: string = "Tooltip message";
 
   render() {
     //debugger
-    return (
-      <div>{this.msg}</div>
-    )
+    return <div>{this.msg}</div>;
   }
 }
