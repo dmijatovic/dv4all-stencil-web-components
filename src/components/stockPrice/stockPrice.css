@@ -1,0 +1,15 @@
+
+:host{
+  display:block;
+  position: relative;
+  padding: 1rem;
+  color:var(--color-primary-contrast,#fff);
+  background-color:var(--color-primary,#333);
+}
+
+/*
+#highcharts-stock-chart{
+  position:absolute;
+}*/
+
+

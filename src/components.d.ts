@@ -54,6 +54,9 @@ export namespace Components {
     'dataTitle'?: string;
   }
 
+  interface Dv4MarketCapStockPrice {}
+  interface Dv4MarketCapStockPriceAttributes extends StencilHTMLAttributes {}
+
   interface Dv4Tooltip {
     'msg': string;
   }
@@ -74,6 +77,7 @@ declare global {
     'Dv4SquareSpin': Components.Dv4SquareSpin;
     'Dv4Swirl': Components.Dv4Swirl;
     'Dv4SideDrawer': Components.Dv4SideDrawer;
+    'Dv4MarketCapStockPrice': Components.Dv4MarketCapStockPrice;
     'Dv4Tooltip': Components.Dv4Tooltip;
   }
 
@@ -88,6 +92,7 @@ declare global {
     'dv4-square-spin': Components.Dv4SquareSpinAttributes;
     'dv4-swirl': Components.Dv4SwirlAttributes;
     'dv4-side-drawer': Components.Dv4SideDrawerAttributes;
+    'dv4-market-cap-stock-price': Components.Dv4MarketCapStockPriceAttributes;
     'dv4-tooltip': Components.Dv4TooltipAttributes;
   }
 
@@ -152,6 +157,12 @@ declare global {
     new (): HTMLDv4SideDrawerElement;
   };
 
+  interface HTMLDv4MarketCapStockPriceElement extends Components.Dv4MarketCapStockPrice, HTMLStencilElement {}
+  var HTMLDv4MarketCapStockPriceElement: {
+    prototype: HTMLDv4MarketCapStockPriceElement;
+    new (): HTMLDv4MarketCapStockPriceElement;
+  };
+
   interface HTMLDv4TooltipElement extends Components.Dv4Tooltip, HTMLStencilElement {}
   var HTMLDv4TooltipElement: {
     prototype: HTMLDv4TooltipElement;
@@ -169,6 +180,7 @@ declare global {
     'dv4-square-spin': HTMLDv4SquareSpinElement
     'dv4-swirl': HTMLDv4SwirlElement
     'dv4-side-drawer': HTMLDv4SideDrawerElement
+    'dv4-market-cap-stock-price': HTMLDv4MarketCapStockPriceElement
     'dv4-tooltip': HTMLDv4TooltipElement
   }
 
@@ -183,6 +195,7 @@ declare global {
     'dv4-square-spin': HTMLDv4SquareSpinElement;
     'dv4-swirl': HTMLDv4SwirlElement;
     'dv4-side-drawer': HTMLDv4SideDrawerElement;
+    'dv4-market-cap-stock-price': HTMLDv4MarketCapStockPriceElement;
     'dv4-tooltip': HTMLDv4TooltipElement;
   }
 
