@@ -1,33 +1,41 @@
-# SideDrawer web component (stencil)
+# dv4-side-drawer
 
-## Sample implementation
 
-html
-```html
-  <side-drawer title="Side drawer title [required]">
-    <!--slotted content [optional]-->
-    <secton slot="tab1-content">
-      This is body 1 of drawer
-    </secton>
-    <secton slot="tab2-content">
-      This is body 2 of drawer
-    </secton>
-  </side-drawer>
-```
-javascript
-```javascript
-  //get reference to custom web component
-  const drawer = document.querySelector('side-drawer')
 
-  //show drawer
-  drawer.open()
+<!-- Auto Generated Below -->
 
-  //hide drawer
-  drawer.close()
 
-  //get state 
-  if (drawer.open){
-    console.log("drawer is open")
-  }
+## Properties
 
-```
+| Property    | Attribute    | Description | Type      | Default           |
+| ----------- | ------------ | ----------- | --------- | ----------------- |
+| `dataShow`  | `data-show`  |             | `boolean` | `false`           |
+| `dataTitle` | `data-title` |             | `string`  | `"Default title"` |
+
+
+## Methods
+
+### `close() => void`
+
+
+
+#### Returns
+
+Type: `void`
+
+
+
+### `open() => void`
+
+
+
+#### Returns
+
+Type: `void`
+
+
+
+
+----------------------------------------------
+
+*Built with [StencilJS](https://stenciljs.com/)*

@@ -1,6 +1,6 @@
 # Stencil Component Starter
 
-This is a starter project for building a standalone Web Component using Stencil.
+This is a starter project for building standalone Web Component using Stencil.
 Stencil is also great for building entire apps. For that, use the [stencil-app-starter](https://github.com/ionic-team/stencil-app-starter) instead.
 
 ## Remarks
@@ -13,6 +13,23 @@ Stencil is also great for building entire apps. For that, use the [stencil-app-s
   npm i -D prettier tslint-config-prettier
 
 ```
+
+## Builds
+
+To build run npm run build. After build you can do following with build code.
+
+## Publish to NPM
+
+```bash
+  npm login
+  # provide user and password and 2PA
+
+  npm publish
+
+```
+
+
+
 
 # Stencil
 
