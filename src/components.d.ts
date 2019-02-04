@@ -15,6 +15,12 @@ export namespace Components {
   interface Dv4BallTriangle {}
   interface Dv4BallTriangleAttributes extends StencilHTMLAttributes {}
 
+  interface Dv4Circle {}
+  interface Dv4CircleAttributes extends StencilHTMLAttributes {}
+
+  interface Dv4Dots {}
+  interface Dv4DotsAttributes extends StencilHTMLAttributes {}
+
   interface Dv4Loader {
     'dataType': string;
   }
@@ -25,11 +31,17 @@ export namespace Components {
   interface Dv4Packman {}
   interface Dv4PackmanAttributes extends StencilHTMLAttributes {}
 
+  interface Dv4Rainbow {}
+  interface Dv4RainbowAttributes extends StencilHTMLAttributes {}
+
   interface Dv4Roller {}
   interface Dv4RollerAttributes extends StencilHTMLAttributes {}
 
   interface Dv4SquareSpin {}
   interface Dv4SquareSpinAttributes extends StencilHTMLAttributes {}
+
+  interface Dv4Swirl {}
+  interface Dv4SwirlAttributes extends StencilHTMLAttributes {}
 
   interface Dv4SideDrawer {
     'close': () => void;
@@ -53,20 +65,28 @@ export namespace Components {
 declare global {
   interface StencilElementInterfaces {
     'Dv4BallTriangle': Components.Dv4BallTriangle;
+    'Dv4Circle': Components.Dv4Circle;
+    'Dv4Dots': Components.Dv4Dots;
     'Dv4Loader': Components.Dv4Loader;
     'Dv4Packman': Components.Dv4Packman;
+    'Dv4Rainbow': Components.Dv4Rainbow;
     'Dv4Roller': Components.Dv4Roller;
     'Dv4SquareSpin': Components.Dv4SquareSpin;
+    'Dv4Swirl': Components.Dv4Swirl;
     'Dv4SideDrawer': Components.Dv4SideDrawer;
     'Dv4Tooltip': Components.Dv4Tooltip;
   }
 
   interface StencilIntrinsicElements {
     'dv4-ball-triangle': Components.Dv4BallTriangleAttributes;
+    'dv4-circle': Components.Dv4CircleAttributes;
+    'dv4-dots': Components.Dv4DotsAttributes;
     'dv4-loader': Components.Dv4LoaderAttributes;
     'dv4-packman': Components.Dv4PackmanAttributes;
+    'dv4-rainbow': Components.Dv4RainbowAttributes;
     'dv4-roller': Components.Dv4RollerAttributes;
     'dv4-square-spin': Components.Dv4SquareSpinAttributes;
+    'dv4-swirl': Components.Dv4SwirlAttributes;
     'dv4-side-drawer': Components.Dv4SideDrawerAttributes;
     'dv4-tooltip': Components.Dv4TooltipAttributes;
   }
@@ -76,6 +96,18 @@ declare global {
   var HTMLDv4BallTriangleElement: {
     prototype: HTMLDv4BallTriangleElement;
     new (): HTMLDv4BallTriangleElement;
+  };
+
+  interface HTMLDv4CircleElement extends Components.Dv4Circle, HTMLStencilElement {}
+  var HTMLDv4CircleElement: {
+    prototype: HTMLDv4CircleElement;
+    new (): HTMLDv4CircleElement;
+  };
+
+  interface HTMLDv4DotsElement extends Components.Dv4Dots, HTMLStencilElement {}
+  var HTMLDv4DotsElement: {
+    prototype: HTMLDv4DotsElement;
+    new (): HTMLDv4DotsElement;
   };
 
   interface HTMLDv4LoaderElement extends Components.Dv4Loader, HTMLStencilElement {}
@@ -90,6 +122,12 @@ declare global {
     new (): HTMLDv4PackmanElement;
   };
 
+  interface HTMLDv4RainbowElement extends Components.Dv4Rainbow, HTMLStencilElement {}
+  var HTMLDv4RainbowElement: {
+    prototype: HTMLDv4RainbowElement;
+    new (): HTMLDv4RainbowElement;
+  };
+
   interface HTMLDv4RollerElement extends Components.Dv4Roller, HTMLStencilElement {}
   var HTMLDv4RollerElement: {
     prototype: HTMLDv4RollerElement;
@@ -100,6 +138,12 @@ declare global {
   var HTMLDv4SquareSpinElement: {
     prototype: HTMLDv4SquareSpinElement;
     new (): HTMLDv4SquareSpinElement;
+  };
+
+  interface HTMLDv4SwirlElement extends Components.Dv4Swirl, HTMLStencilElement {}
+  var HTMLDv4SwirlElement: {
+    prototype: HTMLDv4SwirlElement;
+    new (): HTMLDv4SwirlElement;
   };
 
   interface HTMLDv4SideDrawerElement extends Components.Dv4SideDrawer, HTMLStencilElement {}
@@ -116,20 +160,28 @@ declare global {
 
   interface HTMLElementTagNameMap {
     'dv4-ball-triangle': HTMLDv4BallTriangleElement
+    'dv4-circle': HTMLDv4CircleElement
+    'dv4-dots': HTMLDv4DotsElement
     'dv4-loader': HTMLDv4LoaderElement
     'dv4-packman': HTMLDv4PackmanElement
+    'dv4-rainbow': HTMLDv4RainbowElement
     'dv4-roller': HTMLDv4RollerElement
     'dv4-square-spin': HTMLDv4SquareSpinElement
+    'dv4-swirl': HTMLDv4SwirlElement
     'dv4-side-drawer': HTMLDv4SideDrawerElement
     'dv4-tooltip': HTMLDv4TooltipElement
   }
 
   interface ElementTagNameMap {
     'dv4-ball-triangle': HTMLDv4BallTriangleElement;
+    'dv4-circle': HTMLDv4CircleElement;
+    'dv4-dots': HTMLDv4DotsElement;
     'dv4-loader': HTMLDv4LoaderElement;
     'dv4-packman': HTMLDv4PackmanElement;
+    'dv4-rainbow': HTMLDv4RainbowElement;
     'dv4-roller': HTMLDv4RollerElement;
     'dv4-square-spin': HTMLDv4SquareSpinElement;
+    'dv4-swirl': HTMLDv4SwirlElement;
     'dv4-side-drawer': HTMLDv4SideDrawerElement;
     'dv4-tooltip': HTMLDv4TooltipElement;
   }
